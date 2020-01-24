@@ -1,0 +1,222 @@
+
+
+/* Add a black background color to the top navigation */
+.topnav ul 
+  background-color:     #000000
+  overflow: hidden
+  text-align: left
+  margin: auto
+
+
+/* Style the links inside the navigation bar */
+.topnav a 
+  display: block
+  color:  white
+  text-align: center
+  padding: 5px
+  text-decoration: none
+  font-size: 30px
+
+
+/* Change the color of links on hover */
+.topnav a:hover 
+  background-color: yellow
+  color: black
+
+
+/* Add a color to the active/current link */
+.topnav a.active 
+  background-color: darkgrey
+  color: white
+
+.topnav li
+  float: left
+  list-style-type: none
+
+
+.header 
+  background: #800000
+  padding: 20px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+#head1
+  height: 50px
+
+//footer
+footer 
+  background-color: #000000
+
+  
+  
+
+footer img 
+  width: 250px
+  padding-top: 10px
+  
+
+
+
+footer p 
+  padding-bottom: 20px
+  font-size: 15px
+  color: white
+  text-align: center
+
+.footerImg
+  text-align: right
+// footer ende
+
+//Datums Anzeige
+
+#datumAnzeige
+  text-align: right
+  font-weight: bold
+
+// Top News Design
+.greyLine
+  background-color: lightgrey
+  text-align: left
+  padding-left: 10px
+  font-size: 30px
+
+/* hier startet die Bildergalerie */
+/* Rahmen um den einzelnen Bild + Text bereich ruhend */
+div.gallery 
+  border: 1px solid #ccc 
+
+/* Rahmen wenn sich was über den Bereich bewegt */
+div.gallery:hover 
+  border: 4px solid #777 
+
+div.gallery img 
+  width: 100%
+  height: 300px
+  object-fit: cover 
+
+/* text padding unter dem Bild */
+div.desc 
+  padding: 10px
+  text-align: center
+  color: white
+  background-color: black
+  font-size: 20px
+
+* 
+  box-sizing: border-box 
+
+/* links ausrichten 6px zum nächsten Bild, 24,9999% weil 4 Bilder */
+.responsive 
+  padding-right: 30px
+  
+
+/* 2 nebeneinander ab 700px */
+
+/* nur ein Bild */
+
+
+.containerMain1
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+.ImageRow1
+  display: flex
+  justify-content: space-between 
+  align-items: stretch
+
+.container
+  max-width: 1300px
+  margin: auto
+  padding-left: 30px
+  padding-right: 30px
+
+#flexGrey1
+  width: 100%
+
+.flexBox1
+  width: 90%
+
+#Banner1
+  width: 10%
+
+.Banner3
+  text-align: center
+  margin: 30px
+
+.Banner3 img
+  width: 95%
+
+.Container2
+  display: flex
+  flex-direction: row
+  align-items: stretch
+
+.flexBox2
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 80%
+
+
+.Banner4
+  width: 20%
+  text-align: right
+.Banner4 img
+  width: 75.5%
+
+
+.responsive2
+  padding-right: 50px
+  padding-bottom: 50px
+  width: 50%
+
+#secondNav a
+  font-size: 15px
+
+#RespoBanner
+  display: none
+
+
+@media screen and (max-width: 480px) 
+  .responsive 
+    width: 49.99999%
+    margin: 6px 0
+
+  #Banner1
+    display: none
+
+  .ImageRow1
+    flex-wrap: wrap
+
+  .flexBox1
+    width: 100%
+
+  .Banner4
+    display: none
+
+  .flexBox2
+    width: 100%
+
+  .responsive2
+    padding-right: 4px
+
+  .responsive
+    padding-right: 4px
+
+  div.gallery img
+    height: 120px
+
+  div.desc
+    font-size: 10px
+
+  #RespoBanner
+    display: inline-block
+  #RespoBanner img
+    height: 165px
+
+  #head2
+    display: none
+
