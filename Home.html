@@ -196,18 +196,18 @@
 <script>
 
 const days = [
-'So',
-'Mo',
-'Di',
-'Mi',
-'Do',
-'Fr',
-'Sa'
-]
+'Sonntag',
+'Montag',
+'Dienstag',
+'Mittwoch',
+'Donnerstag',
+'Freitag',
+'Samstag'
+];
 
 var date = new Date();
-var dateString = days[date.getDay()] + ", " + date.getDate() + "." + (date.getMonth() + "." + date.getFullYear();
-document.getElementById("zeit").innerHTML = dateString();
+var dateString = days[date.getDay()] + ", " + date.getDate() + "." + (date.getMonth()+1) + "." + date.getFullYear();
+document.getElementById("zeit").innerHTML = dateString;
 
 
 
