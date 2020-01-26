@@ -118,7 +118,9 @@
 -->
 </div>
 
-<img id="Banner1"  src="img/banner-2.png" alt="FWD">
+<a href="http://codefactory.wien" id="Banner1">
+<img src="img/banner-2.png" alt="FWD">
+</a>
 
 </div>
 
@@ -162,7 +164,7 @@
 			  </div>
 			</div>
 		</div>
-		<div class="Banner4"> <img src="img/Banner-4.png" alt="CF"></div>	
+		<a href="http://codefactory.wien" class="Banner4"> <img src="img/Banner-4.png" alt="CF"></a>	
 
 	</div>
 
@@ -192,8 +194,22 @@
 
 
 <script>
-var datum = new Date();
-document.getElementById("zeit").innerHTML = datum.toString();
+
+const days = [
+'So',
+'Mo',
+'Di',
+'Mi',
+'Do',
+'Fr',
+'Sa'
+]
+
+var date = new Date();
+var dateString = days[date.getDay()] + ", " + date.getDate() + "." + (date.getMonth() + "." + date.getFullYear();
+document.getElementById("zeit").innerHTML = dateString();
+
+
 
 </script>
 
