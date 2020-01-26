@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>Codereview2</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="Styleboard.css" />
+</head>
+<body>
+
+	<div class="header">
+		<img id="head1" src="img/logo-newspaper-cf.png" alt="Newespaper CF">
+		<img id="head2" src="img/banner-1.png" alt="Code Factory Fullstack Development">
+	</div>
+
+
+	<header id="headnav" class="topnav">
+		<ul>
+			<li><a href="Home.html">Home</a></li>
+				<li><a  href="Tech.html">Tech</a></li>
+				<li><a class="active"  href="Culture.html">Culture</a></li>
+			<li><a href="Video.html">Video</a></li>
+		 </ul> 
+ 	
+	</header><!-- /header -->
+
+<!-- Datumsanzeige -->
+<p id="datumAnzeige"><span aria-current="date" id="zeit"></span></p>
+
+
+<footer>
+<div class="topnav" id="secondNav">
+	<ul>
+			<li><a href="Home.html">Home</a></li>
+				<li><a href="Tech.html">Tech</a></li>
+				<li><a class="active"  href="Culture.html">Culture</a></li>
+			<li><a href="Video.html">Video</a></li>
+	</ul>
+</div>
+	<div class="footerImg"><img src="img/logo-newspaper-cf.png" alt="Newspaper CF"></div>
+	<p>Daniel Fronaschitz- CodeFactory 2020</p>
+</footer>
+
+
+<script>
+
+const days = [
+'Sonntag',
+'Montag',
+'Dienstag',
+'Mittwoch',
+'Donnerstag',
+'Freitag',
+'Samstag'
+];
+
+var date = new Date();
+var dateString = days[date.getDay()] + ", " + date.getDate() + "." + (date.getMonth()+1) + "." + date.getFullYear();
+document.getElementById("zeit").innerHTML = dateString;
+
+
+
+</script>
+
+
+</body>
+</html>
